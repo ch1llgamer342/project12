@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            padding: 20px;
+        }
+        .avatar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        main {
+            padding: 20px;
+        }
+        .about, .gallery {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .photo-grid img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #ff5722;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            background: #ff9800;
+        }
+        @media (max-width: 600px) {
+            .photo-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .social-links a {
+                display: block;
+                width: 80%;
+                text-align: center;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="avatar">
+            <img src="avatar.jpg" alt="Your Avatar">
+        </div>
+        <h1>Welcome to My Football World</h1>
+        <p>Big fan of Cristiano Ronaldo</p>
+    </header>
+    
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi! I’m a young football player passionate about the game and inspired by Cristiano Ronaldo. My dream is to become a professional player like him.</p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="photo-grid">
+                <img src="photo1.jpg" alt="Football Moment">
+                <img src="photo2.jpg" alt="Training">
+                <img src="photo3.jpg" alt="Game Day">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h2>Follow Me</h2>
+        <div class="social-links">
+            <a href="https://t.me/just_AZ1K" class="telegram">Telegram</a>
+            <a href="#" class="instagram">Instagram</a>
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="whatsapp">WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>
